@@ -6,7 +6,9 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-const API_KEY = 'AIzaSyDR3-2PP94eOnM9dVtFWlg3B2h8wRvNRAI';
+const API_KEY = config.YOUTUBE_API_KEY;
+
+
 
 
 
@@ -48,11 +50,4 @@ class App extends Component {
    }
 }
 
-// create new component. Should produce HTML
-// const App = () => {
-//   return <div>
-//     <SearchBar />
-//   </div>;
-// }
-//take component's html and put on the page / in the DOM
 ReactDOM.render(<App />, document.querySelector('.container'));
